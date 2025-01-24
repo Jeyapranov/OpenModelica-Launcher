@@ -62,7 +62,7 @@ OpenModelica-Launcher/
    ```
 
 ### Creating an Executable
-I already add the .exe file but If you want to package the app as an `.exe` file:
+I already add the .exe file in dist folder but If you want to package the app as an `.exe` file:
 
 1. Install PyInstaller:
    ```bash
