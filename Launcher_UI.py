@@ -61,7 +61,7 @@ class Ui_OM(object):
 
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setGeometry(QtCore.QRect(30, 240, 41, 41))
-        self.label_5.setPixmap(QtGui.QPixmap("images/5683325.png"))
+        self.label_5.setPixmap(QtGui.QPixmap("images/info.png"))
         self.label_5.setScaledContents(True)
         self.label_5.setToolTip("Click to know more about this launcher")
         self.label_5.setObjectName("label_5")
