@@ -114,4 +114,3 @@ The GUI was designed using **Qt Designer**. If you want to tweak the layout:
 - **PyInstaller** for creating standalone executables.
 
 ---
-```
