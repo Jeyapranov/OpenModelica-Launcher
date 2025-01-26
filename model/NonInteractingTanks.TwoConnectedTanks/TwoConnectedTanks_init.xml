@@ -7,13 +7,13 @@
   modelName                           = "NonInteractingTanks.TwoConnectedTanks"
   modelIdentifier                     = "NonInteractingTanks_TwoConnectedTanks"
 
-  OPENMODELICAHOME                    = "/usr/bin/.."
+  OPENMODELICAHOME                    = "C:/Program Files/OpenModelica1.24.3-64bit"
 
-  guid                                = "{296dd736-ef09-42d7-875c-4a2647e06dbd}"
+  guid                                = "{05e1b15f-d3e4-4beb-a9a7-5d79a4a059f8}"
 
   description                         = ""
-  generationTool                      = "OpenModelica Compiler OpenModelica 1.24.3~1-gd778872"
-  generationDateAndTime               = "2025-01-24T11:31:17Z"
+  generationTool                      = "OpenModelica Compiler OpenModelica v1.24.3 (64-bit)"
+  generationDateAndTime               = "2025-01-26T17:16:38Z"
 
   variableNamingConvention            = "structured"
 
@@ -65,7 +65,7 @@
     alias = "noAlias"
     classIndex = "0" classType = "rSta"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "11" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "11" fileWritable = "true">
     <Real fixed="true" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -76,7 +76,7 @@
     alias = "noAlias"
     classIndex = "1" classType = "rSta"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
     <Real fixed="true" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -87,7 +87,7 @@
     alias = "noAlias"
     classIndex = "0" classType = "rDer"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "11" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "11" fileWritable = "true">
     <Real fixed="false" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -98,7 +98,7 @@
     alias = "noAlias"
     classIndex = "1" classType = "rDer"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
     <Real fixed="false" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -109,7 +109,7 @@
     alias = "noAlias"
     classIndex = "0" classType = "rAlg"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
     <Real start="0.0" fixed="false" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -120,7 +120,7 @@
     alias = "noAlias"
     classIndex = "1" classType = "rAlg"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank2.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "12" fileWritable = "true">
     <Real fixed="false" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -131,7 +131,7 @@
     alias = "noAlias"
     classIndex = "0" classType = "rPar"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "29" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "29" fileWritable = "true">
     <Real start="1.0" fixed="true" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -142,7 +142,7 @@
     alias = "noAlias"
     classIndex = "1" classType = "rPar"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "29" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "29" fileWritable = "true">
     <Real start="2.0" fixed="true" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -153,7 +153,7 @@
     alias = "noAlias"
     classIndex = "2" classType = "rPar"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank2.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "27" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank2.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "27" fileWritable = "true">
     <Real start="1.0" fixed="true" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -164,7 +164,7 @@
     alias = "noAlias"
     classIndex = "3" classType = "rPar"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank2.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "27" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank2.mo" startLine = "4" startColumn = "1" endLine = "4" endColumn = "27" fileWritable = "true">
     <Real start="10.0" fixed="true" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -175,7 +175,7 @@
     alias = "alias" aliasVariable="tank2.Q1" aliasVariableId="4"
     classIndex = "0" classType = "rAli"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/Tank.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "11" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/Tank.mo" startLine = "5" startColumn = "1" endLine = "5" endColumn = "11" fileWritable = "true">
     <Real fixed="false" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -186,7 +186,7 @@
     alias = "alias" aliasVariable="tank2.Q1" aliasVariableId="4"
     classIndex = "1" classType = "rAli"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/FlowConnect.mo" startLine = "4" startColumn = "3" endLine = "4" endColumn = "9" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/FlowConnect.mo" startLine = "4" startColumn = "3" endLine = "4" endColumn = "9" fileWritable = "true">
     <Real fixed="false" useNominal="false" />
   </ScalarVariable>
   <ScalarVariable
@@ -197,7 +197,7 @@
     alias = "alias" aliasVariable="tank2.Q1" aliasVariableId="4"
     classIndex = "2" classType = "rAli"
     isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "/home/jeyapranov/model/NonInteractingTanks/FlowConnect.mo" startLine = "4" startColumn = "3" endLine = "4" endColumn = "9" fileWritable = "true">
+    fileName = "E:/om/NonInteractingTanks/FlowConnect.mo" startLine = "4" startColumn = "3" endLine = "4" endColumn = "9" fileWritable = "true">
     <Real fixed="false" useNominal="false" />
   </ScalarVariable>
 
