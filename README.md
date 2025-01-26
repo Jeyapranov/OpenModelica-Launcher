@@ -29,7 +29,7 @@ OpenModelica-Launcher/
 ---
 
 ## How to Use the App
-1. Open the app (by run the Launcher_main.py or open the exe file).
+1. Open the app (by run the Launcher_main.py or open the exe file in the dist folder).
 2. Select an OpenModelica executable file (`.exe` from model folder).
 3. Enter the start and stop times in the input fields.
 4. Click the **Launch Model** button to run the simulation.
