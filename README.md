@@ -4,17 +4,10 @@ This project is a simple app to help run OpenModelica models with start and stop
 
 ---
 
-## What You Need to Get Started
-
-### 1. OpenModelica
-First, you need to have OpenModelica installed. Download it from their [official website](https://www.openmodelica.org/download).
-
-### 2. Python and Libraries
-Make sure you have Python (3.6 or higher) installed. Then install the required libraries manually using the following commands:
-
-```bash
-pip install PyQt6
-```
+# Features
+1) Launch open modelica models easily with customizable start and stop time
+2) user friendly and ease to access
+3) dynamic colour adjuctment for dark and light modes
 
 ---
 
@@ -28,10 +21,18 @@ OpenModelica-Launcher/
 ├── Launcher_UI.ui        # GUI design (Qt Designer)
 ├── Launcher_UI.py        # Python code converted from the .ui file
 ├── Launcher_main.py      # Main application logic
-├── images/               # Contains all images used in the GUI
-├── OpenModelicaLauncher.spec # PyInstaller spec file
+├── .gitignore            # contains images and cache files 
 └── README.md             # This file
 ```
+
+---
+
+## How to Use the App
+1. Open the app (in development or using the executable).
+2. Select an OpenModelica executable file (`.exe`).
+3. Enter the start and stop times in the input fields.
+4. Click the **Launch Model** button to run the simulation.
+5. To view app info, click on the info label.
 
 ---
 
@@ -87,14 +88,6 @@ I already add the .exe file in dist folder but If you want to package the app as
 
 ---
 
-## How to Use the App
-1. Open the app (in development or using the executable).
-2. Select an OpenModelica executable file (`.exe`).
-3. Enter the start and stop times in the input fields.
-4. Click the **Launch Model** button to run the simulation.
-5. To view app info, click on the info label.
-
----
 
 ## Notes on Qt Designer
 The GUI was designed using **Qt Designer**. If you want to tweak the layout:
