@@ -1,5 +1,6 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
-
+import os
+import sys
 
 class Ui_OM(object):
     def setupUi(self, OM):
@@ -38,30 +39,33 @@ class Ui_OM(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(20, 110, 154, 31))
         self.label.setText(
-            "<html><head/><body><p><span style=\" font-weight:600; color:#f6f5f4;\">Select the Model :</span></p></body></html>")
+            "<html><head/><body><p><span style=\" font-weight:bold,900; color:#3399dd;\">Select the Model here:</span></p></body></html>"
+        )
         self.label.setObjectName("label")
 
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(-10, 0, 411, 91))
-        self.label_4.setPixmap(QtGui.QPixmap("images/om1.png"))
+        self.label_4.setPixmap(QtGui.QPixmap(self.resource_path("images/om1.png")))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
 
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(240, 160, 91, 18))
         self.label_3.setText(
-            "<html><head/><body><p><span style=\" font-weight:600; color:#f6f5f4;\">Stop Time:</span></p></body></html>")
+            "<html><head/><body><p><span style=\" font-weight:bold; color:#3399dd;\">Stop Time:</span></p></body></html>"
+        )
         self.label_3.setObjectName("label_3")
 
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(40, 160, 101, 18))
         self.label_2.setText(
-            "<html><head/><body><p><span style=\" font-weight:600; color:#f6f5f4;\">Start Time:</span></p></body></html>")
+            "<html><head/><body><p><span style=\" font-weight:bold; color:#3399dd;\">Start Time:</span></p></body></html>"
+        )
         self.label_2.setObjectName("label_2")
 
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setGeometry(QtCore.QRect(30, 240, 41, 41))
-        self.label_5.setPixmap(QtGui.QPixmap("images/info.png"))
+        self.label_5.setPixmap(QtGui.QPixmap(self.resource_path("images/info.png")))
         self.label_5.setScaledContents(True)
         self.label_5.setToolTip("Click to know more about this launcher")
         self.label_5.setObjectName("label_5")
@@ -74,5 +78,9 @@ class Ui_OM(object):
     def retranslateUi(self, OM):
         _translate = QtCore.QCoreApplication.translate
         OM.setWindowTitle(_translate("OM", "OM Launcher"))
-        OM.setWindowIcon(QtGui.QIcon("../images/openmodelica.png"))
+        OM.setWindowIcon(QtGui.QIcon(self.resource_path("images/openmodelica.png")))
 
+    def resource_path(self, relative_path):
+        """Get absolute path to resource, works for dev and PyInstaller."""
+        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+        return os.path.join(base_path, relative_path)

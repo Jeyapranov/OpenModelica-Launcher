@@ -1,9 +1,10 @@
 import sys
 import subprocess
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QPushButton
-from PyQt6.QtGui import QDesktopServices
+from PyQt6.QtGui import QDesktopServices, QPalette
 from PyQt6.QtCore import QUrl
-from Launcher_UI import Ui_OM  # The class name must match the UI class name
+from Launcher_UI import Ui_OM
+
 
 class MainApp(QMainWindow):
     def __init__(self):
@@ -13,12 +14,65 @@ class MainApp(QMainWindow):
 
         # Connect buttons and interactive elements
         self.ui.pushButton.clicked.connect(self.launch_model)  # Launch button
-        self.ui.pushButton_2.clicked.connect(self.close_app)   # Cancel button
-        self.ui.label_5.mousePressEvent = self.show_info       # "i" icon click event (fixed here)
+        self.ui.pushButton_2.clicked.connect(self.close_app)  # Cancel button
+        self.ui.label_5.mousePressEvent = self.show_info  # "i" icon click event
         self.ui.comboBox.mousePressEvent = self.open_file_dialog  # ComboBox click to select exe file
 
         # Initialize ComboBox placeholder
         self.ui.comboBox.addItem("Select a model executable")  # Initial placeholder
+
+        # Apply dynamic theme
+        self.apply_theme()
+
+    def apply_theme(self):
+        """Apply dynamic theme based on system settings."""
+        palette = QApplication.palette()
+        is_dark_mode = palette.color(QPalette.ColorRole.WindowText).lightness() < 128
+
+        if is_dark_mode:
+            self.setStyleSheet(
+                """
+                QWidget {
+                    background-color: #ffffff;
+                    color: #333333;
+                }
+                QLineEdit, QComboBox, QPushButton {
+                    background-color: #1E1E1E;
+                    color: #000000;
+                    border: 1px solid #666;
+                    border-radius: 5px;
+                    padding: 4px;
+                }
+                QPushButton:hover {
+                    background-color: #333;
+                }
+                QLabel {
+                    color: #BBBBBB;
+                }
+                """
+            )
+        else:
+            self.setStyleSheet(
+                """
+                QWidget {
+                    background-color: #FFFFFF;
+                    color: #000000;
+                }
+                QLineEdit, QComboBox, QPushButton {
+                    background-color: #E8E8E8;
+                    color: #000000;
+                    border: 1px solid #AAA;
+                    border-radius: 5px;
+                    padding: 4px;
+                }
+                QPushButton:hover {
+                    background-color: #DDD;
+                }
+                QLabel {
+                    color: #333333;
+                }
+                """
+            )
 
     def create_styled_messagebox(self, title, text, box_type="info"):
         """Create a custom-styled QMessageBox."""
@@ -27,9 +81,9 @@ class MainApp(QMainWindow):
         # Set the title, text, and icon based on the box type
         box.setWindowTitle(title)
         box.setText(text)
-        if box_type == "error":
+        if box_type == "ERROR BOX":
             box.setIcon(QMessageBox.Icon.Critical)
-        elif box_type == "info":
+        elif box_type == "Info Box":
             box.setIcon(QMessageBox.Icon.Information)
 
         # Custom style for the OK button
@@ -77,7 +131,7 @@ class MainApp(QMainWindow):
 
         # Validation
         if selected_model == "Select a model executable" or not selected_model.endswith(".exe"):
-            self.create_styled_messagebox("Error", "Please select a valid OpenModelica executable,start time and stop time.", box_type="error")
+            self.create_styled_messagebox("Error", "Please select a valid OpenModelica executable.", box_type="error")
             return
         if not start_time.isdigit() or not stop_time.isdigit():
             self.create_styled_messagebox("Error", "Start time and Stop time must be numeric.", box_type="error")
