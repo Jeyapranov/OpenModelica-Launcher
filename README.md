@@ -18,10 +18,10 @@ Here’s how the project is organized:
 ```
 OpenModelica-Launcher/
 │
-├── Launcher_UI.ui        # GUI design (Qt Designer)
+├── model                 # model with exe files and dependent files
 ├── Launcher_UI.py        # Python code converted from the .ui file
 ├── Launcher_main.py      # Main application logic
-├── .gitignore            # contains images and cache files 
+├── .gitignore            # contains images and cache files and .ui code(QT designer)
 └── README.md             # This file
 ```
 
