@@ -86,7 +86,8 @@ I already add the .exe file in dist folder but If you want to package the app as
      ./Launcher_main
      ```
 ---
-![Image](E:\om\OpenModelica-Launcher\images\UI.png)
+
+<img src="E:\om\OpenModelica-Launcher\images\UI.png" alt="UI Image" style="width: 100%;"/>
 
 ---
 
