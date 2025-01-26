@@ -19,6 +19,7 @@ Here’s how the project is organized:
 OpenModelica-Launcher/
 │
 ├── model                 # model with exe files and dependent files
+├── dist                  # contains .exe file for GUI
 ├── Launcher_UI.py        # Python code converted from the .ui file
 ├── Launcher_main.py      # Main application logic
 ├── .gitignore            # contains images and cache files and .ui code(QT designer)
@@ -28,7 +29,7 @@ OpenModelica-Launcher/
 ---
 
 ## How to Use the App
-1. Open the app (by run the Launcher_main.py).
+1. Open the app (by run the Launcher_main.py or open the exe file).
 2. Select an OpenModelica executable file (`.exe` from model folder).
 3. Enter the start and stop times in the input fields.
 4. Click the **Launch Model** button to run the simulation.
